@@ -70,4 +70,64 @@ public class UserEvent {
     public void setLastViewedAt(Date lastViewedAt) {
         this.lastViewedAt = lastViewedAt;
     }
+
+    public static void setFormatter(SimpleDateFormat formatter) {
+        UserEvent.formatter = formatter;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public void setLoginAt(Date loginAt) {
+        this.loginAt = loginAt;
+    }
+
+    public void setTokenIssuedAt(Date tokenIssuedAt) {
+        this.tokenIssuedAt = tokenIssuedAt;
+    }
+
+    public static SimpleDateFormat getFormatter() {
+        return formatter;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public Date getLoginAt() {
+        return loginAt;
+    }
+
+    public Date getTokenIssuedAt() {
+        return tokenIssuedAt;
+    }
+
+    public Date getLastViewedAt() {
+        return lastViewedAt;
+    }
 }
