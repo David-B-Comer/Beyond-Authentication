@@ -66,4 +66,8 @@ public class UserEvent {
     public String getLoginAtString() {
         return formatter.format(loginAt);
     }
+
+    public void setLastViewedAt(Date lastViewedAt) {
+        this.lastViewedAt = lastViewedAt;
+    }
 }
